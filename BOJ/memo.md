@@ -46,10 +46,36 @@ st.append(String객체 또는 문자열)로 값을 붙인다. 프린트는 바�
     // 스트림 닫기
     bw.close();
     ```
+    
 
+---
+
+
+# String 관련 메서드
 
 - String의 repeat() 메서드
   - 파라미터의 주어진 횟수만큼 반복한다.
   - 0이면 빈 문자열, 1이면 문자열 그대로, 음수면 `IllegalArgumentExceptionthrow` 에러를 반환한다. 
+
+    
+---
+
+
+# ArrayList 사용법
+
+- ArrayList<Integer> arrList = new ArrayList<>(10); // 초기용량 설정
+- ArrayList<Integer> arrList = new ArrayList<>(Arrays.asList(1,2,3)); // 배열 넣어서 생성
+- ArrayList<Integer> arrList = new ArrayList<>(list2); // List 객체 넣어서 생성
+- 메서드
+  - add("값");
+  - addAll(list3); // List 객체 넣어서 추가 가능
+  - remove(2); // 2번 인덱스 요소 삭제
+  - clear(); // 요소를 모두 삭제
+  - get(0); 0번 인덱스 요소값 얻기 
+  - subList(0, 4); // 0~3번 인텍스 값 얻기
+  - set(0, "test"); // 0번 인덱스 값 변경
+  - ensureCapacity(10); // 용량 재지정 
+  - 배열로 변환 -> String[] arr = ArrayList객체.toArray();
+  - 기타 : sort정렬, clone복제, iterator순회
 
 
